@@ -42,11 +42,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a passionate digital character artist specializing in original character creation 
+        and storytelling through visual art. With expertise in character design, digital illustration, 
+        and world-building, I bring fictional characters to life with rich backstories and compelling 
+        personalities. I love collaborating with creators to develop unique characters that resonate 
+        with audiences and tell meaningful stories. Let's work together to bring your vision to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -32,7 +32,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Gallery",
   },
   {
     id: "contact",
@@ -42,129 +42,129 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Character Design",
+    icon: creator,
+  },
+  {
+    title: "Digital Illustration",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Concept Art",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Story Creation",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
+    name: "Photoshop",
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "Procreate",
+    icon: html,
+  },
+  {
+    name: "Clip Studio",
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "Illustrator",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "Blender",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "After Effects",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Substance Painter",
+    icon: nodejs,
+  },
+  {
+    name: "ZBrush",
+    icon: mongodb,
+  },
+  {
+    name: "Maya",
+    icon: threejs,
+  },
+  {
+    name: "Krita",
+    icon: git,
+  },
+  {
+    name: "Aseprite",
+    icon: tailwind,
+  },
+  {
+    name: "Marmoset",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Freelance Character Artist",
+    company_name: "Independent",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2020 - 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created original character designs for indie game developers and content creators.",
+      "Developed character backstories and visual narratives that resonated with target audiences.",
+      "Collaborated with writers and game designers to bring fictional worlds to life.",
+      "Specialized in anime and fantasy art styles with focus on emotional storytelling.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Digital Illustrator",
+    company_name: "Art Community",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2021 - 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built a strong social media presence showcasing original character illustrations.",
+      "Participated in art challenges and collaborated with fellow artists on joint projects.",
+      "Developed signature art style blending traditional and digital techniques.",
+      "Created character concept sheets and visual development for personal IP projects.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Commission Artist",
+    company_name: "Online Platforms",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2022 - 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Fulfilled custom character commissions for clients worldwide through various platforms.",
+      "Specialized in creating detailed character portraits with rich backstories and lore.",
+      "Maintained high client satisfaction through clear communication and revision processes.",
+      "Expanded skill set to include character turnarounds and expression sheets.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Professional Character Designer",
+    company_name: "Creative Studio",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading character design projects for original intellectual properties and client work.",
+      "Creating comprehensive character documentation including personality profiles and world-building.",
+      "Mentoring emerging artists in character design principles and storytelling through art.",
+      "Continuously evolving artistic style while maintaining consistent quality and vision.",
     ],
   },
 ];
@@ -172,93 +172,93 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Lhyann brought my original character vision to life in ways I never imagined. The attention to detail and emotional depth is incredible.",
+    name: "Maya Chen",
+    designation: "Game Developer",
+    company: "Indie Studio",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Working with Lhyann was a dream. She understood my character's personality perfectly and created art that tells a complete story.",
+    name: "Alex Rivera",
+    designation: "Writer",
+    company: "Creative Collective",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "The character designs Lhyann created for our project exceeded all expectations. Her storytelling through art is phenomenal!",
+    name: "Emma Watson",
+    designation: "Creative Director",
+    company: "Digital Arts Inc",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Ethereal Guardians",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A series of mystical character designs featuring elemental guardians, each with unique personalities and backstories. Created for an indie fantasy game with detailed character lore and world-building elements.",
     tags: [
       {
-        name: "react",
+        name: "fantasy",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "characterdesign",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "digitalart",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://artstation.com/",
   },
   {
-    name: "Job IT",
+    name: "Urban Legends",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Modern reimagining of classic mythological characters in contemporary settings. Each illustration tells a story of ancient beings adapting to modern life while maintaining their mystical essence.",
     tags: [
       {
-        name: "react",
+        name: "mythology",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "conceptart",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "storytelling",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://artstation.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Dreamscape Chronicles",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A collection of original characters living in surreal dreamlike worlds. Each piece explores themes of imagination, identity, and the subconscious mind through vibrant character illustrations.",
     tags: [
       {
-        name: "nextjs",
+        name: "surreal",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "originalcharacter",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "illustration",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://artstation.com/",
   },
 ];
 
