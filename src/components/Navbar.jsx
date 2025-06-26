@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -9,6 +9,8 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,31 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavClick = (nav) => {
+    if (nav.id === "characters") {
+      navigate("/characters");
+      setActive(nav.title);
+    } else {
+      // Navigate to home page and scroll to section
+      if (location.pathname !== "/") {
+        navigate("/");
+        // Wait for navigation to complete before scrolling
+        setTimeout(() => {
+          const element = document.getElementById(nav.id);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      } else {
+        const element = document.getElementById(nav.id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+      setActive(nav.title);
+    }
+  };
 
   return (
     <nav
@@ -56,9 +83,9 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => handleNavClick(nav)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <span>{nav.title}</span>
             </li>
           ))}
         </ul>
@@ -85,10 +112,10 @@ const Navbar = () => {
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    handleNavClick(nav);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <span>{nav.title}</span>
                 </li>
               ))}
             </ul>
