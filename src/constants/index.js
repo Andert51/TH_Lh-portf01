@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  reinay01,
 } from "../assets";
 
 export const navLinks = [
@@ -266,6 +267,27 @@ const projects = [
       },
     ],
     image: tripguide,
+    source_code_link: "https://artstation.com/",
+  },
+  {
+    name: "Lost Souls - Reynay Smirov",
+    description:
+      "The story of Reynay, a 12-year-old mortal girl lost in a magical realm. Displaced by dark magic and adopted by caring wizards, she navigates a world where her mortal nature is both her weakness and her strength. Her curiosity and determination drive her to explore forbidden places as she searches for her true destiny.",
+    tags: [
+      {
+        name: "fantasy",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "originalcharacter",
+        color: "green-text-gradient",
+      },
+      {
+        name: "digitalart",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: reinay01,
     source_code_link: "https://artstation.com/",
   },
 ];

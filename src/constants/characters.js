@@ -1,4 +1,4 @@
-import { carrent, jobit, tripguide } from "../assets";
+import { carrent, jobit, tripguide, reinay01, reinay02, reinay03, reinay04 } from "../assets";
 
 export const charactersDatabase = [
   {
@@ -97,6 +97,22 @@ export const charactersDatabase = [
     image: tripguide,
     gallery: [tripguide, carrent, jobit],
   },
+  {
+    id: 7,
+    name: "Reynay Smirov",
+    title: "The Lost Mortal",
+    category: "Lost Souls",
+    element: "Curiosity",
+    age: "12 years",
+    origin: "Mortal World (displaced to Magical Realm)",
+    personality: "Curious, brave, determined",
+    abilities: ["Mortal adaptability", "Hidden potential", "Fearless exploration"],
+    backstory: "Reynay's story begins when she was disappeared by an evil sorcerer, her mother's ex-boyfriend who sought revenge for being abandoned. Sent to a strange place where humans are scarce and magic is more common than in the world of mere mortals, she was adopted by a pair of wizards who decided to care for her, knowing she was just a mortal. They hid her mortal nature from those around her and chose to live in a forest far from civilization. Reynay never gave up hope for powers or something supernatural to emerge from within her. Her parents didn't know where she came from. Reynay was too curious and more than once she would go out to investigate places where she wasn't allowed to go.",
+    description: "A brave 12-year-old girl with an insatiable curiosity and determination that defies her mortal nature. Despite being powerless in a world of magic, her spirit remains unbroken as she searches for her place in this mystical realm.",
+    tags: ["fantasy", "oc", "artedigital", "mortal", "lost", "curious"],
+    image: reinay01,
+    gallery: [reinay01, reinay02, reinay03, reinay04],
+  },
 ];
 
 export const characterCategories = [
@@ -104,6 +120,7 @@ export const characterCategories = [
   "Ethereal Guardians",
   "Urban Legends", 
   "Dreamscape Chronicles",
+  "Lost Souls",
 ];
 
 export const characterElements = [
@@ -114,4 +131,5 @@ export const characterElements = [
   "Storm",
   "Memory",
   "Stars",
+  "Curiosity",
 ];

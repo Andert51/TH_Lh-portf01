@@ -30,6 +30,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+// Reinay character images
+import reinay01 from "./characters/Reinay/Reinay01.png";
+import reinay02 from "./characters/Reinay/Rainay02.png";
+import reinay03 from "./characters/Reinay/Reinay03.png";
+import reinay04 from "./characters/Reinay/Reinay04.png";
+
 export {
   logo,
   backend,
@@ -59,4 +65,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  reinay01,
+  reinay02,
+  reinay03,
+  reinay04,
 };

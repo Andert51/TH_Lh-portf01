@@ -8,6 +8,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Characters from "./Characters";
+import CharacterDetail from "./CharacterDetail";
 import CanvasLoader from "./Loader";
 
 
@@ -21,6 +22,7 @@ export {
   Feedbacks,
   Contact,
   Characters,
+  CharacterDetail,
   CanvasLoader,
   EarthCanvas, 
   BallCanvas, 
