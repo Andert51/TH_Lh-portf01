@@ -88,7 +88,6 @@ const Characters = () => {
   const handleCharacterClick = (character) => {
     console.log('Character clicked:', character);
     console.log('Navigating to:', `/character/${character.id}`);
-    alert(`Clicking on ${character.name} - ID: ${character.id}`);
     navigate(`/character/${character.id}`);
   };
 

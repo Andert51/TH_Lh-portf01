@@ -57,16 +57,16 @@ const CharacterDetail = () => {
     <div className='bg-primary min-h-screen'>
       {/* Header with back button */}
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <div className='max-w-7xl mx-auto px-6 py-8'>
+        <div className='max-w-7xl mx-auto px-6 pt-32 pb-8'>
           <motion.button
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             onClick={() => navigate('/characters')}
-            className='flex items-center gap-2 text-secondary hover:text-white transition-colors mb-8'
+            className='flex items-center gap-2 text-secondary hover:text-white transition-colors mb-8 z-10 relative'
           >
             <span className='text-2xl'>←</span>
-            <span>Back to Characters</span>
+            <span className='font-medium'>Back to Characters</span>
           </motion.button>
 
           <motion.div
