@@ -9,6 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Characters from "./Characters";
 import CharacterDetail from "./CharacterDetail";
+import AdminPanel from "./AdminPanel";
 import CanvasLoader from "./Loader";
 
 
@@ -23,6 +24,7 @@ export {
   Contact,
   Characters,
   CharacterDetail,
+  AdminPanel,
   CanvasLoader,
   EarthCanvas, 
   BallCanvas, 

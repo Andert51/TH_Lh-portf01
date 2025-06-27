@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useAuth } from "../contexts/AuthContext";
 
 const Hero = () => {
+  const { isLoggedIn, user, isAdmin } = useAuth();
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -15,6 +18,21 @@ const Hero = () => {
         </div>
 
         <div>
+          {/* Welcome message for logged-in users */}
+          {isLoggedIn && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className='mb-4'
+            >
+              <p className='text-[#915EFF] text-[18px] font-medium'>
+                Welcome back, {user?.name || user?.email?.split('@')[0]}!
+                {isAdmin && " (Admin)"}
+              </p>
+            </motion.div>
+          )}
+          
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Lhyann</span>
           </h1>
@@ -22,6 +40,18 @@ const Hero = () => {
             I create original characters with <br className='sm:block hidden' />
             rich stories and captivating visuals
           </p>
+          
+          {/* Additional message for users */}
+          {isLoggedIn && user?.type === "user" && (
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className='mt-4 text-secondary text-[16px]'
+            >
+              Your credentials are saved for future commission requests.
+            </motion.p>
+          )}
         </div>
       </div>
 

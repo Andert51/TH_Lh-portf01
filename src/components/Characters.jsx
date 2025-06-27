@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
 
 import { styles } from "../styles";
-import { charactersDatabase, characterCategories, characterElements } from "../constants/characters";
+import { characterCategories, characterElements } from "../constants/characters";
+import { getCharacters } from "../utils/characterStorage";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const CharacterCard = ({ character, index, onClick }) => {
@@ -71,9 +72,26 @@ const CharacterCard = ({ character, index, onClick }) => {
 
 const Characters = () => {
   const navigate = useNavigate();
+  const [charactersDatabase, setCharactersDatabase] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedElement, setSelectedElement] = useState("All");
+
+  useEffect(() => {
+    loadCharacters();
+  }, []);
+
+  const loadCharacters = async () => {
+    try {
+      const characters = await getCharacters();
+      setCharactersDatabase(characters);
+    } catch (error) {
+      console.error("Error loading characters:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const filteredCharacters = charactersDatabase.filter(character => {
     const matchesSearch = character.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -90,6 +108,14 @@ const Characters = () => {
     console.log('Navigating to:', `/character/${character.id}`);
     navigate(`/character/${character.id}`);
   };
+
+  if (loading) {
+    return (
+      <div className='bg-primary min-h-screen flex items-center justify-center'>
+        <div className='text-white text-xl'>Loading characters...</div>
+      </div>
+    );
+  }
 
   return (
     <div className='bg-primary min-h-screen'>

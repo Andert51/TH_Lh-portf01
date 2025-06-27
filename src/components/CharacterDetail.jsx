@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
 import { styles } from "../styles";
-import { charactersDatabase } from "../constants/characters";
+import { getCharacters } from "../utils/characterStorage";
 import { fadeIn, textVariant, slideIn } from "../utils/motion";
 import { github, close } from "../assets";
 
@@ -15,11 +15,20 @@ const CharacterDetail = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    const foundCharacter = charactersDatabase.find(
-      (char) => char.id === parseInt(characterId)
-    );
-    setCharacter(foundCharacter);
+    loadCharacter();
   }, [characterId]);
+
+  const loadCharacter = async () => {
+    try {
+      const characters = await getCharacters();
+      const foundCharacter = characters.find(
+        (char) => char.id === parseInt(characterId)
+      );
+      setCharacter(foundCharacter);
+    } catch (error) {
+      console.error("Error loading character:", error);
+    }
+  };
 
   if (!character) {
     return (
