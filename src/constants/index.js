@@ -24,7 +24,12 @@ import {
   tripguide,
   threejs,
   reinay01,
+  moon01,
+  coffee01,
+  lilith01,
 } from "../assets";
+
+import { charactersDatabase } from "./characters";
 
 export const navLinks = [
   {
@@ -205,18 +210,19 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
-    name: "Ethereal Guardians",
-    description:
-      "A series of mystical character designs featuring elemental guardians, each with unique personalities and backstories. Created for an indie fantasy game with detailed character lore and world-building elements.",
+// Function to get 3 random characters for the gallery
+const getRandomCharactersForGallery = () => {
+  const shuffled = [...charactersDatabase].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 3).map((character, index) => ({
+    name: character.name,
+    description: character.backstory,
     tags: [
       {
-        name: "fantasy",
+        name: character.element.toLowerCase(),
         color: "blue-text-gradient",
       },
       {
-        name: "characterdesign",
+        name: character.category.toLowerCase().replace(/\s+/g, ''),
         color: "green-text-gradient",
       },
       {
@@ -224,72 +230,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: character.image,
     source_code_link: "https://artstation.com/",
-  },
-  {
-    name: "Urban Legends",
-    description:
-      "Modern reimagining of classic mythological characters in contemporary settings. Each illustration tells a story of ancient beings adapting to modern life while maintaining their mystical essence.",
-    tags: [
-      {
-        name: "mythology",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "conceptart",
-        color: "green-text-gradient",
-      },
-      {
-        name: "storytelling",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://artstation.com/",
-  },
-  {
-    name: "Dreamscape Chronicles",
-    description:
-      "A collection of original characters living in surreal dreamlike worlds. Each piece explores themes of imagination, identity, and the subconscious mind through vibrant character illustrations.",
-    tags: [
-      {
-        name: "surreal",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "originalcharacter",
-        color: "green-text-gradient",
-      },
-      {
-        name: "illustration",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://artstation.com/",
-  },
-  {
-    name: "Lost Souls - Reynay Smirov",
-    description:
-      "The story of Reynay, a 12-year-old mortal girl lost in a magical realm. Displaced by dark magic and adopted by caring wizards, she navigates a world where her mortal nature is both her weakness and her strength. Her curiosity and determination drive her to explore forbidden places as she searches for her true destiny.",
-    tags: [
-      {
-        name: "fantasy",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "originalcharacter",
-        color: "green-text-gradient",
-      },
-      {
-        name: "digitalart",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: reinay01,
-    source_code_link: "https://artstation.com/",
-  },
-];
+  }));
+};
+
+const projects = getRandomCharactersForGallery();
 
 export { services, technologies, experiences, testimonials, projects };

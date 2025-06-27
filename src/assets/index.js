@@ -36,6 +36,19 @@ import reinay02 from "./characters/Reinay/Rainay02.png";
 import reinay03 from "./characters/Reinay/Reinay03.png";
 import reinay04 from "./characters/Reinay/Reinay04.png";
 
+// Moon character images
+import moon01 from "./characters/Moon/Moon01.png";
+import moon02 from "./characters/Moon/Moon02.png";
+
+// Coffee character images
+import coffee01 from "./characters/Coffee/Coffee01.png";
+import coffee02 from "./characters/Coffee/Coffee02.png";
+
+// Lilith character images
+import lilith01 from "./characters/Lilith/Lilith01.png";
+import lilith02 from "./characters/Lilith/Lilith02.png";
+import lilith03 from "./characters/Lilith/Lilith03.png";
+
 export {
   logo,
   backend,
@@ -69,4 +82,11 @@ export {
   reinay02,
   reinay03,
   reinay04,
+  moon01,
+  moon02,
+  coffee01,
+  coffee02,
+  lilith01,
+  lilith02,
+  lilith03,
 };

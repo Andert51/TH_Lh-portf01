@@ -1,0 +1,15 @@
+name: Coffee
+title: The Energetic Alchemist
+category: Modern Mystics
+element: Energy
+age: 22 years
+origin: Urban Coffee Shops
+personality: Energetic, creative, passionate
+abilities: "Energy manipulation", "Potion brewing", "Caffeine magic", "Inspiration casting"
+race: Human
+backstory: Coffee discovered her magical abilities while working as a barista in a small, mystical coffee shop. She realized she could infuse emotions and energy into her brews, creating potions that could inspire creativity, boost confidence, or provide comfort. Now she travels between dimensions, bringing the perfect cup to those who need it most, using her magical coffee beans to help people achieve their dreams.
+role: Energetic Alchemist
+description: A vibrant young woman with warm brown hair streaked with golden highlights that seem to shimmer like coffee beans. Her eyes sparkle with endless energy, and she's always surrounded by the comforting aroma of freshly brewed coffee and magical steam.
+tags: modern, coffee, energy, urban, alchemy
+image: coffee01
+gallery: coffee01, coffee02

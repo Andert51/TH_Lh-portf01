@@ -1,0 +1,15 @@
+name: Moon
+title: Guardian of the Night
+category: Celestial Beings
+element: Lunar
+age: Eternal
+origin: Celestial Realm
+personality: Serene, protective, wise
+abilities: "Lunar magic", "Dream guidance", "Night vision", "Tidal control"
+race: Celestial
+backstory: Moon is an ancient celestial guardian who watches over the night and all who dwell within its embrace. Born from the first moonbeam that touched the earth, she guides lost souls through darkness and protects dreamers from nightmares. Her gentle light has been a beacon of hope for countless generations, offering comfort to those who feel alone in the darkness.
+role: Guardian of the Night
+description: A luminous figure with pale silver skin that glows softly in darkness. Her long, flowing hair resembles moonbeams, and her eyes hold the depth of starlit skies. She wears ethereal robes that shimmer like moonlight on water.
+tags: celestial, moon, guardian, night, dreams
+image: moon01
+gallery: moon01, moon02

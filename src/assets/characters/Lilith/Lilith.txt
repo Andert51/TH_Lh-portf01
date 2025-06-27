@@ -1,0 +1,15 @@
+name: Lilith
+title: The Shadow Weaver
+category: Dark Enchantresses
+element: Shadow
+age: Unknown (appears 25)
+origin: The Void Between Worlds
+personality: Mysterious, powerful, complex
+abilities: "Shadow manipulation", "Void magic", "Dark enchantments", "Reality bending"
+race: Void Entity
+backstory: Lilith emerged from the spaces between dimensions, where light and darkness merge into something entirely new. Neither good nor evil, she exists as a force of balance, wielding shadow magic to maintain equilibrium between opposing forces. Her past is shrouded in mystery, but those who encounter her speak of her immense power and the profound wisdom hidden behind her enigmatic smile.
+role: Shadow Weaver
+description: A striking figure with raven-black hair and piercing violet eyes that seem to hold secrets of the universe. She wears dark, flowing garments that seem to be woven from shadows themselves, and her presence commands both respect and caution.
+tags: shadow, mystery, power, enchantress, void
+image: lilith01
+gallery: lilith01, lilith02, lilith03
