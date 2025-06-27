@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -67,6 +68,8 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -86,6 +89,18 @@ const Works = () => {
           that bring them to life.
         </motion.p>
       </div>
+
+      <motion.div 
+        variants={fadeIn("up", "", 0.2, 1)}
+        className='mt-8 flex justify-center'
+      >
+        <button
+          onClick={() => navigate('/characters')}
+          className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-[#1a1a3a] transition-colors duration-300'
+        >
+          Explore Character Library
+        </button>
+      </motion.div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
